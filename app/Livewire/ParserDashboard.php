@@ -24,12 +24,16 @@ class ParserDashboard extends Component
 
     public function parseRange(ParserService $parser): void
     {
+        \Log::info("Запуск парсинга для: {$this->templateName}, {$this->baseUrl}, страницы: {$this->fromPage} - {$this->toPage}");
+
         $this->validate([
             'templateName' => 'required',
             'baseUrl' => 'required|url',
             'fromPage' => 'required|integer|min:1',
             'toPage' => 'required|integer|min:1|gte:fromPage',
         ]);
+
+        \Log::info("Парсинг завершён успешно");
 
         $this->loading = true;
 
