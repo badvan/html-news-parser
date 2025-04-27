@@ -1,0 +1,10 @@
+{
+  "name": "trinixy.ru",
+  "title": "h2 a",
+  "list_item": "article.typical",
+  "short_story": "article.typical",
+  "full_story": "article.typical",
+  "full_link": "h2 a",
+  "images": "img",
+  "remove": ["div.advert", "script"]
+}
